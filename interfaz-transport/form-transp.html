@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transportador - Responder Mensajes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Transportador - Mensajes Recibidos</h1>
+
+        <!-- Lista de mensajes recibidos -->
+        <div class="received-messages">
+            <h2>Mensajes de la Empresa</h2>
+            <ul id="messagesList">
+                <!-- Los mensajes recibidos aparecerán aquí -->
+            </ul>
+        </div>
+
+        <!-- Formulario para enviar respuestas -->
+        <div class="response-form">
+            <h2>Enviar Respuesta</h2>
+            <form id="responseForm">
+                <label for="response">Respuesta:</label>
+                <textarea id="response" rows="4" placeholder="Escribe tu respuesta..." required></textarea>
+                <button type="submit">Enviar Respuesta</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

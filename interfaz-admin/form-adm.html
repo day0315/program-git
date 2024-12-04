@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel - Mensajes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Panel de Administración</h1>
+
+        <!-- Formulario para enviar mensajes -->
+        <div class="message-form">
+            <h2>Enviar Mensaje a Transportadores</h2>
+            <form id="messageForm">
+                <label for="transportador">Selecciona un Transportador:</label>
+                <select id="transportador" required>
+                    <option value="" disabled selected>Seleccionar...</option>
+                    <option value="transportador1">Transportador 1</option>
+                    <option value="transportador2">Transportador 2</option>
+                    <option value="transportador3">Transportador 3</option>
+                </select>
+
+                <label for="message">Mensaje:</label>
+                <textarea id="message" rows="4" placeholder="Escribe tu mensaje..." required></textarea>
+
+                <button type="submit">Enviar Mensaje</button>
+            </form>
+        </div>
+
+        <!-- Área para mostrar respuestas -->
+        <div class="responses">
+            <h2>Respuestas de Transportadores</h2>
+            <ul id="responsesList">
+                <!-- Las respuestas se mostrarán aquí -->
+            </ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
